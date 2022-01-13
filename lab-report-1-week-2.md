@@ -28,6 +28,18 @@ ssh <address>
 ```
 ![Image of commands](lab1-images/img5.png)
 ## Moving Files with scp
-Hello
+First, we need to know that we are able to SSH onto the remote device first. We can use the command `ssh <address>` to connect to the remote machine. You will be prompted for passwords, and after entering them, there will be a result that looks something similar to this:
+![Image of ssh](lab1-images/img6.png)
+Say we have some files we want to move over to that device. As of now, the home folder of your account on that device may have nothing (mine has a few items on it right now). 
+![Image of ls](lab1-images/img7.png)
+We may have a file, for example temp.txt, that we want to move over from your local machine to your remote machine. Exit the remote machine with `exit`. 
+SCP the file over (secure copy) to your remote machine with the command `scp <file name> <remote account>`
+![Image of using scp](lab1-images/img8.png)
+If we SSH back, we can see that it is there:
+![Image of temp.txt](lab1-images/img9.png)
 ## Setting an SSH Key
+Typing in your password this many times is getting a bit annoying. We can remedy this by adding our SSH key to the remote device. On your local device, use `ssh-keygen` to create an ssh key if you don't have one already, else find it in the folder `.ssh` in your user's root directory. The file will end with the extension `.pub`. Scp the file over to the remote device's `.ssh`folder; I'd do it like this:
+```scp id_rsa.pub cs15lwi22arh@ieng6.ucsd.edu:~/.ssh/authorized_keys``` What this does is it copies it to folder `.ssh` and renames it `authorized_keys`.
+![Image of sshed.txt](lab1-images/img10.png)
+If I login to the remote machine, I'll instantly notice that it was instant - no passwords required.
 ## Optimizing Remote Running
