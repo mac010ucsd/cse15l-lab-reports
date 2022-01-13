@@ -7,13 +7,13 @@ Overall, make sure you have at least 6 screenshots, one for each of the steps be
 First, download the VSCode installer for whichever platform you will be using, from the official [VSCode website](https://code.visualstudio.com/Download). 
 ![vscode download page](lab1-images/img1.png)
 After running through the installer and all of the steps it tells you to do, you should be able to launch the application. At this point, you will be greeted with a mostly-blank screen which should look something like this:
-![vscode first entry]()
+![vscode first entry](lab-images/img2.png)
 
 ## Remotely Connecting
 First, we should open the terminal. This can be done by either clicking (on the top bar) `terminal`->`new terminal` or by using the keyboard shortcut `ctrl`+`shift`+`grave` which works on both Windows and Mac.
-![Image of opening terminal]()
+![Image of opening terminal](lab-images/img3.png)
 A bar will pop up at the bottom, which is the terminal. Depending on whether you use a Mac or a Windows machine, it may look a little bit different from the screenshots (all the following screenshots will have been run on a Mac device).
-![Image of blank terminal]()
+![Image of blank terminal](lab-images/img4.png)
 ## Trying Some Commands
 Some useful commands that we can use are listed here:
 ```
@@ -21,13 +21,13 @@ grep <phrase> <file>
 	returns the line at which the phrase appears in the file
 ls
 	lists all of the files in the directory that are not hidden
-ls -a
-	lists all of the files, even those that are hidden
+mkdir <name>
+	make a directory called name
 ssh <address>
 	uses secure shell to connect to a server
 ```
-![Image of commands]()
+![Image of commands](lab-images/img5.png)
 ## Moving Files with scp
-
+Hello
 ## Setting an SSH Key
 ## Optimizing Remote Running
