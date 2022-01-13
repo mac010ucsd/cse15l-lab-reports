@@ -43,3 +43,6 @@ Typing in your password this many times is getting a bit annoying. We can remedy
 ![Image of sshed.txt](lab1-images/img10.png)
 If I login to the remote machine, I'll instantly notice that it was instant - no passwords required.
 ## Optimizing Remote Running
+We can combine some commands into a single line by using some tricks.
+For example, we can use the semicolon `;` to use two commands in one line. In addition, we can put commands after the SSH connect command to just execute the command and quit. We can combine this to run multiple commands on the remote machine and just quit afterwards like so:
+![Image of sshed.txt](lab1-images/img11.png)
