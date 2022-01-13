@@ -5,10 +5,7 @@ this is another md file.
 **bold text**
 [go back](https://mac010ucsd.github.io/cse15l-lab-reports/)
 ![DUCK](https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Bucephala-albeola-010.jpg/440px-Bucephala-albeola-010.jpg)
-> look at this quote
-> this is also part of the blockquote
-* hello
-* world
+> look at this quote!
 * testing
 * testing
 1. one
