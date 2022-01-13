@@ -5,7 +5,7 @@ Overall, make sure you have at least 6 screenshots, one for each of the steps be
 
 ## Installing VScode
 First, download the VSCode installer for whichever platform you will be using, from the official [VSCode website](https://code.visualstudio.com/Download). 
-![vscode download page]()
+![vscode download page](lab1-images/img1.png)
 After running through the installer and all of the steps it tells you to do, you should be able to launch the application. At this point, you will be greeted with a mostly-blank screen which should look something like this:
 ![vscode first entry]()
 
