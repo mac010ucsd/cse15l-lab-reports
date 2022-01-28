@@ -11,7 +11,7 @@ After running through the installer and all of the steps it tells you to do, you
 
 ## Remotely Connecting
 First, we should open the terminal. This can be done by either clicking (on the top bar) `terminal`->`new terminal` or by using the keyboard shortcut `ctrl`+`shift`+`grave` which works on both Windows and Mac.
-![Image of opening terminal](lab1images/img3.png)
+![Image of opening terminal](lab1-images/img3.png)
 A bar will pop up at the bottom, which is the terminal. Depending on whether you use a Mac or a Windows machine, it may look a little bit different from the screenshots (all the following screenshots will have been run on a Mac device).
 ![Image of blank terminal](lab1-images/img4.png)
 ## Trying Some Commands
@@ -46,3 +46,14 @@ If I login to the remote machine, I'll instantly notice that it was instant - no
 We can combine some commands into a single line by using some tricks.
 For example, we can use the semicolon `;` to use two commands in one line. In addition, we can put commands after the SSH connect command to just execute the command and quit. We can combine this to run multiple commands on the remote machine and just quit afterwards like so:
 ![Image of sshed.txt](lab1-images/img11.png)
+The command below can be pasted and run with just `ctrl`+`v`: 2 keystrokes, or just the `up` key: 1 keystroke. (not incuding `enter`)
+```
+scp WhereAmI.java cs15lwi22arh@ieng6.ucsd.edu:~/; ssh cs15lwi22arh@ieng6.ucsd.edu "javac WhereAmI.java; java WhereAmI"
+```
+This is equivalent to the below command, which could be copy/pasted one line at a time, which would be 4 copies and 4 pastes, equivalent to *16* keystrokes. This below sequence of commands could also be run by pressing `up` a total of 10 times. (not incuding `enter`)
+```
+scp WhereAmI.java cs15lwi22arh@ieng6.ucsd.edu:~/
+ssh cs15lwi22arh@ieng6.ucsd.edu 
+javac WhereAmI.java
+java WhereAmI
+```
