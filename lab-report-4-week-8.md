@@ -1,10 +1,11 @@
 # Lab Report 4, Week 8.
 
 ## Repos Used:
-Mine: https://github.com/mac010ucsd/markdown-parse
-Theirs: https://github.com/m1ma0314/markdown-parse
+Mine: [mac010ucsd](https://github.com/mac010ucsd/markdown-parse)
 
-## The Snippets.
+Theirs: [m1ma0314](https://github.com/m1ma0314/markdown-parse)
+
+## Snippets.
 I will be looking at the snippets in Commonmark's DINGUS markdown previewer/renderer. 
 ### Snippet 1:
 ```
