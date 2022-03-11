@@ -59,6 +59,8 @@ If we look at the markdown file, it only contains a single line, which is
 which parses as a BROKEN IMAGE HERE:
 ![foo](train.jpg)
 
+_EDIT: github pages does not produce the broken image icon but trust me the "link" is there_
+
 The goal of the program is to extract links but not image links. Thus, the provided
  implementation fails in this respect. Our group's implementation does not include
   this image link, and thus is correct (for this test)
@@ -67,7 +69,7 @@ Looking into the JPOLITZ implemetation, the symptom is that it gives a link when
  The bug is that JPOLITZ here does not write functionality to check for the exclamation point
   before the link begins. 
 
-![fix1](fix1.png)
+![fix1](lab5-images/fix1.png)
 
 A way to fix this would be to check whether the substring at `nextOpenBracket-1` equals an exclamation point. If it does, we skip considering this "link" or indices as a possible link. 
 
@@ -87,11 +89,13 @@ which parses as something that is not a link below:
 
 [foo]: /url1
 
+_EDIT: github pages considers it a successful link but neither vscode nor commonmark does._
+
 Commonmark declares "links" with spaces within the link content that are not 
 padding as invalid links. Thus, this is "not a link", and not a link. Our groups' implementation is flawed as it considers it a link.
 
 The symptom for our group is that it counts as a link. The bug is that we did not check for spaces within the link content before fully confirming it as a link. 
 
-![fix2](fix2.png)
+![fix2](lab5-images/fix2.png)
 
 A way to fix this would be to check whether there exists `" "` within the substring using indexOf. If there is, we will consider it a faux link. Additionally, we could add the functionality of removing padding from the link as the JPOLITZ implementation does so that it would not trigger on padding whitespace.
