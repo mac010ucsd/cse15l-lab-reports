@@ -1,7 +1,7 @@
 # Lab Report 5, Week 10.
 
 ## Intro
-In lab 9, we experimented with the commonmark tests. Here, I will be choosing
+In Lab 9, we experimented with the commonmark tests. Here, I will be choosing
 2 tests where our two implementations differ. The tests with different answers 
 correspond to different bugs such that we couldn't fix both with 
 one code change.
